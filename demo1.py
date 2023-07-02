@@ -5,7 +5,8 @@ SimpleWebPageReader = download_loader("SimpleWebPageReader")
 
 sites_to_test = {
   "panera": "https://www.panerabread.com/en-us/legal/your-privacy.html",
-  "github":"https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
+  "github": "https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement",
+  "t-mobile": "https://www.t-mobile.com/privacy-center/privacy-notices/t-mobile-privacy-notice?INTNAV=fNav%3APrivacyNotice"
 }
 
 def run_the_query(name,url):
@@ -19,3 +20,5 @@ def run_the_query(name,url):
 run_the_query('github', sites_to_test.get('github'))
 print("--------")
 run_the_query('panera', sites_to_test.get('panera'))
+print("--------")
+run_the_query('t-mobile', sites_to_test.get('t-mobile'))
